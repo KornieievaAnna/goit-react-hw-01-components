@@ -1,8 +1,43 @@
-/* .list-item:nth-child(2n) {
-    background-color: orange;
-} */
+.transactions {
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    /* border-collapse: collapse; */
+    border-radius: 5px;
+}
 
-/* Аналогично используя псевдоним */
-/* .list-item:nth-child(even) {
-    background-color: orange;
-} */
+.thead {
+    background-color: rgb(40, 151, 231);
+    color: rgb(215, 214, 214);
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    text-align: center;
+}
+
+.textstart {
+    text-align: start;
+}
+
+
+.datahead {
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    padding: 10px 50px;
+}
+
+
+.data {
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.data:nth-child(3n+1) {
+    text-align: start;
+}
+
+.data:nth-child(2n) {
+    text-align: end;
+}
+
+.dataevensecond:nth-child(2n) {
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    padding: 10px 50px;
+    background-color: rgb(243, 242, 242);
+}

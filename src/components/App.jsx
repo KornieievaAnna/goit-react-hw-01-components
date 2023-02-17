@@ -27,7 +27,14 @@ import transactions from '../data/transactions.json';
 
 export default function App() {
   return (
-    <div>
+    <div style={{
+        display: 'flex',
+        flexDirection: 'column', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        fontSize: 23, 
+       
+      }}>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -36,6 +43,7 @@ export default function App() {
         stats={user.stats} />
       
       <Statistics title="Upload stats" stats={data} />
+      {/* <Statistics stats={data} /> */}
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>

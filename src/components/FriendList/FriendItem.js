@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import css from './FriendList.module.css';
 
 export default function FriendItem({ avatar, name, status }) {
   return (
     <>
-      <span className="status">{status ? 'онлайн' : 'офлайн'}</span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
+      <span className={status ? css.online : css.offline}></span>
+      <img className={css.avatar} src={avatar} alt={name} width="48" height="48" />
+      <p className={css.name}>{name}</p>
     </>
   );
 }
@@ -31,5 +32,3 @@ FriendItem.propTypes = {
 //     )
 // }
 // export default Friend;
-
-
