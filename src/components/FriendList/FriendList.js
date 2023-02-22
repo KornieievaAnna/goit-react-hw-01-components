@@ -6,13 +6,12 @@ export default function FriendList({ friends }) {
   return (
     <ul className={css.friends}>
       {friends.map(friend => (
-        <li key={friend.id} className={css.item}>
           <FriendItem
+            id={friend.id}
             avatar={friend.avatar}
             name={friend.name}
             status={friend.isOnline}
           />
-        </li>
       ))}
     </ul>
   );

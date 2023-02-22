@@ -44,7 +44,7 @@
 .stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    list-style-type: none;
+    /* list-style-type: none; */
     font-weight: 500;
     padding: 0px;
     margin: 0px;

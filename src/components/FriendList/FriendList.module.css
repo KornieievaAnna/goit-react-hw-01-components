@@ -4,7 +4,7 @@
 }
 
 .item {
-    list-style-type: none;
+    /* list-style-type: none; */
     display: flex;
     gap: 10px;
     align-items: center;
